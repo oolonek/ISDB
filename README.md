@@ -1,6 +1,6 @@
-# ISDB
-A database of In-Silico predicted MS/MS spectrum of Natural Products
+# ISDB (In-Silico MS/MS DataBase)
+A database of In-Silico predicted MS/MS spectrum of 170 602 Natural Products from the Universal Natural Products Database (http://pkuxxj.pku.edu.cn/UNPD/index.php)
 
 
-A binary version of tremolo (for Linux 64bits) is distributed. We cannot but recommend to compile your own and replace the two binaries in the tremolo folder. The license status of Tremolo is unclear so please get it at http://proteomics.ucsd.edu/software-tools/tremolo/
+A binary version of tremolo (for Linux 64bits) is also distributed. Documentation is available at http://proteomics.ucsd.edu/software-tools/tremolo/
 
