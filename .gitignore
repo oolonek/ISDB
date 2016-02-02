@@ -1,2 +1,5 @@
 .DS_Store
 .*#
+Data/dbs/UNPD_DB.csv
+Data/results/scripted.params
+Data/results/tremolo.log

@@ -60,6 +60,16 @@ RESULT_FILE="./Results_tremolo.out"
 # Name of the actual annotation file
 INPUT_FILE=$2
 
+# Merging database
+
+if [ ! -f ../dbs/UNPD_DB.csv ]
+then
+    echo "Merging database"
+    OLDPATH=`pwd`
+    cd ../dbs
+    ./merge_db.sh
+    cd $OLDPATH
+fi
 
 # Convert the spectra file as a pkllib file
 echo "Converting the spectra file"
