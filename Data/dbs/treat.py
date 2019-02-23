@@ -3,6 +3,10 @@ from __future__ import print_function
 import csv
 import sys
 
+# Solving an issue on some machines (32 bits?) 
+maxInt = sys.maxsize
+csv.field_size_limit(maxInt)
+
 if len(sys.argv) != 5:
     print(" Incorrect number of arguments")
     sys.exit()
