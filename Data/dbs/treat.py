@@ -52,9 +52,9 @@ with open(result_file, 'rt') as f:
         else:
             if row[scan_id_pos] in result:
                 # Handle multiple molecules by node
-                result[row[scan_id_pos]] += "," + smiles_store[row[unpd_id_pos]]
-                result_cn[row[scan_id_pos]] += "," + cn_store[row[unpd_id_pos]]
-                result_id[row[scan_id_pos]] += "," + row[unpd_id_pos]
+                result[row[scan_id_pos]] += "|" + smiles_store[row[unpd_id_pos]]
+                result_cn[row[scan_id_pos]] += "|" + cn_store[row[unpd_id_pos]]
+                result_id[row[scan_id_pos]] += "|" + row[unpd_id_pos]
             else:
                 result[row[scan_id_pos]] = smiles_store[row[unpd_id_pos]]
                 result_cn[row[scan_id_pos]] = cn_store[row[unpd_id_pos]]
@@ -69,7 +69,7 @@ with open(cytoscape_file, 'rt') as f:
     for row in reader:
         if not header:
             cluster_index = row.index('cluster index')
-            header = row + ["SMILES"] + ["UNPD_IDs"] + ["ChemicalNames"]
+            header = row + ["SMILES_UNPD"] + ["UNPD_IDs"] + ["ChemicalNames_UNPD"]
         else:
             temp = row
             if row[cluster_index] in result:
