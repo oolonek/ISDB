@@ -1,96 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+  <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>ISDB by oolonek</title>
-  </head>
+  <title>ISDB by oolonek</title>
+</head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
+  <div id="container">
+    <div class="inner">
 
-        <header>
-          <h1>ISDB</h1>
-          <h2>A database of In-Silico predicted MS/MS spectrum of Natural Products</h2>
-        </header>
+      <header>
+        <h1>ISDB</h1>
+        <h2>A database of In-Silico predicted MS/MS spectrum of Natural Products</h2>
+      </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/oolonek/ISDB/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/oolonek/ISDB/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/oolonek/ISDB" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+      <section id="downloads" class="clearfix">
+        <a href="https://github.com/oolonek/ISDB/zipball/master" id="download-zip" class="button"><span>Download
+            .zip</span></a>
+        <a href="https://github.com/oolonek/ISDB/tarball/master" id="download-tar-gz" class="button"><span>Download
+            .tar.gz</span></a>
+        <a href="https://github.com/oolonek/ISDB" id="view-on-github" class="button"><span>View on GitHub</span></a>
+      </section>
+
+      <hr>
+
+      <section id="main_content">
+        <h3>
+          <a id="welcome-to-isdb-github-page" class="anchor" href="#welcome-to-isdb-github-page"
+            aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISDB GitHub
+          Page.
+        </h3>
+
+        <p>Here you will find the full <em>In-Silico</em> MS/MS DataBase (<strong>ISDB</strong>) described in the paper
+          <a href="http://pubsdc3.acs.org/doi/abs/10.1021/acs.analchem.5b04804"><strong>"Integration of Molecular
+              Networking and In-Silico MS/MS Fragmentation for Natural Products Dereplication"</strong></a>. This ISDB
+          contains <em>in-silico</em> predicted MS/MS fragmentation spectra in positive ion mode for 170 602 Natural
+          Products (NPs) from the UNPD (Universal Natural Products Database).</p>
+
+        <h3>
+          <a id="how-to-use-the-isdb-" class="anchor" href="#how-to-use-the-isdb-" aria-hidden="true"><span
+              aria-hidden="true" class="octicon octicon-link"></span></a>How to use the ISDB ?
+        </h3>
+
+        <p>Instructions for using this ISDB in a dereplication workflow are available as pdf here (updated on 06/2016):
+          <a href="https://github.com/oolonek/ISDB/raw/master/Data/doc/Workflow_062016.pdf">workflow</a></p>
+
+        <h3>
+          <a id="links" class="anchor" href="#links" aria-hidden="true"><span aria-hidden="true"
+              class="octicon octicon-link"></span></a>Links.
+        </h3>
+
+        <ul>
+          <li> An SDF version of the UNPD-ISDB is downloadable here: <a href="https://osf.io/6gsj5/">UNPD-SDF</a>
+          </li>
+          <li>The GNPS (Global Natural Products Social molecular networking) platform is accessible here : <a
+              href="http://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS</a>
+          </li>
+          <li>The Tremolo tool used for the spectral matching against the ISDB is included inside the ISDB zip file.
+            It's documentation is available here : <a
+              href="http://proteomics.ucsd.edu/Software/Tremolo/#Documentation">Tremolo</a> </li>
+          <li>The UNPD is accessible here : <a href="http://pkuxxj.pku.edu.cn/UNPD/">UNPD</a>
+          </li>
+          <li>CFM-ID has been used to generate the <em>in-silico</em> spectra. CFM-ID is freely available here : <a
+              href="http://sourceforge.net/p/cfm-id/wiki/Home/">CFM-ID</a>
+          </li>
+        </ul>
+
+
+        <h3>
+          <a id="data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true"
+              class="octicon octicon-link"></span></a>Data availability.
+        </h3>
+
+        <ul>
+          <li> the original UNPD-ISDB spectral file (.mgf format) is available in the git repo and at the following
+            Zenodo repository <a href="https://doi.org/10.5281/zenodo.5607186"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5607186.svg" alt="DOI"></a>
+          </li>
+          <li> an updated ISDB spectral file (.mgf format) build using multiples sources of natural products structures
+            agglomerated in the frame of <a href="https://lotus.nprod.net/">the LOTUS Initiative</a> is archived the
+            following Zenodo repository <a href="https://doi.org/10.5281/zenodo.5607264"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5607264.svg" alt="DOI"></a>
+          </li>
+
+        </ul>
+
+        <h2>
+          <a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true"
+              class="octicon octicon-link"></span></a>Contact
+        </h2>
+
+        <p>Want to complement the existing ISDB (other compounds, negative mode, adducts ...) ? Improvements,
+          suggestions ? Please contact us : pierre-marie.allard(at)unige.ch</p>
 
         <hr>
 
-        <section id="main_content">
-          <h3>
-<a id="welcome-to-isdb-github-page" class="anchor" href="#welcome-to-isdb-github-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISDB GitHub Page.</h3>
+        <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+              src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>ISDB is licensed under a <a
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+            International License</a>.</p>
+      </section>
 
-<p>Here you will find the full <em>In-Silico</em> MS/MS DataBase (<strong>ISDB</strong>) described in the paper <a href="http://pubsdc3.acs.org/doi/abs/10.1021/acs.analchem.5b04804"><strong>"Integration of Molecular Networking and In-Silico MS/MS Fragmentation for Natural Products Dereplication"</strong></a>. This ISDB contains <em>in-silico</em> predicted MS/MS fragmentation spectra in positive ion mode for 170 602 Natural Products (NPs) from the UNPD (Universal Natural Products Database).</p>
+      <footer>
+        ISDB is maintained by <a href="https://github.com/oolonek">oolonek</a><br>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a
+          href="https://twitter.com/jasonlong">Jason Long</a>.
+      </footer>
 
-<h3>
-<a id="how-to-use-the-isdb-" class="anchor" href="#how-to-use-the-isdb-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use the ISDB ?</h3>
+      <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-72997436-1");
+          pageTracker._trackPageview();
+        } catch (err) { }
+      </script>
 
-<p>Instructions for using this ISDB in a dereplication workflow are available as pdf here (updated on 06/2016): <a href="https://github.com/oolonek/ISDB/raw/master/Data/doc/Workflow_062016.pdf">workflow</a></p>
-
-<h3>
-<a id="links" class="anchor" href="#links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Links.</h3>
-
-<ul>
- <li> An SDF version of the UNPD-ISDB is downloadable here: <a href="https://osf.io/6gsj5/">UNPD-SDF</a>
-</li>
-<li>The GNPS (Global Natural Products Social molecular networking) platform is accessible here : <a href="http://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS</a>
-</li>
-<li>The Tremolo tool used for the spectral matching against the ISDB is included inside the ISDB zip file. It's documentation is available here : <a href="http://proteomics.ucsd.edu/Software/Tremolo/#Documentation">Tremolo</a> </li>
-<li>The UNPD is accessible here : <a href="http://pkuxxj.pku.edu.cn/UNPD/">UNPD</a>
-</li>
-<li>CFM-ID has been used to generate the <em>in-silico</em> spectra. CFM-ID is freely available here : <a href="http://sourceforge.net/p/cfm-id/wiki/Home/">CFM-ID</a>
-</li>
-</ul>
-
-
-<h3>
-  <a id="data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data availability.</h3>
-
-<p>The spectral file of the original UNPD-ISDB is also available at  the following Zenodo repository chek for latest updates <a href="https://doi.org/10.5281/zenodo.5607186"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5607186.svg" alt="DOI"></a>
-
-
-
-<h2>
-<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>
-
-<p>Want to complement the existing ISDB (other compounds, negative mode, adducts ...) ? Improvements, suggestions ? Please contact us : pierre-marie.allard(at)unige.ch</p>
-
-<hr>
-
-<p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>ISDB is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-        </section>
-
-        <footer>
-          ISDB is maintained by <a href="https://github.com/oolonek">oolonek</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-                  <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-72997436-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
